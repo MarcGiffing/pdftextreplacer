@@ -1,7 +1,12 @@
-Replaces (overlaps) the text *<<LOGO-HERE>>* in the PDF *example.pdf* with the logo *logo.png* in the target PDF *replaced.pdf*
+Replaces (overlaps) the text *<LOGO-HERE>* in the PDF *example.pdf* with the logo *logo.png* in the target PDF *replaced.pdf*
 
 [source]
 ----
-java -jar textreplacer.jar --textreplacer.image=src/test/resources/logo.png --textreplacer.image-width=150 --textreplacer.image-heigh=30 --textreplacer.pdf=src/test/resources/example.pdf --textreplacer.textreplacer.target-p-d-f=target/replaced.pdf -- textreplacer.search-text=<<LOGO-HERE>> 
-code
+java -jar textreplacer.jar 
+	--textreplacer.image=src/test/resources/logo.png 
+	--textreplacer.image-width=150 
+	--textreplacer.image-heigh=30 
+	--textreplacer.pdf=src/test/resources/example.pdf 
+	--textreplacer.textreplacer.target-p-d-f=target/replaced.pdf 
+	--textreplacer.search-text=<<LOGO-HERE>>
 ----
